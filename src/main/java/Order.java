@@ -7,4 +7,7 @@ public class Order {
         this.numberOfSugars = numberOfSugars;
     }
 
+    public int getNumberOfSugars() {
+        return numberOfSugars;
+    }
 }
