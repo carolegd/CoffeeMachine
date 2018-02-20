@@ -21,9 +21,15 @@ public class LogicShould {
     }
 
     @Test
-    public void translateOrderForTeaWithTwoSugars() {
-        Order order = new Order("tea", 2);
-        Assert.assertTrue(Logic.translate(order).equals("T:2:0"));
+    public void translateOrderForOneTeaWithOneSugar() {
+        Order order = new Order("tea", 1);
+        Assert.assertTrue(Logic.translate(order).equals("T:1:0"));
+    }
+
+    @Test
+    public void translateOrderForOneCoffeeWithTwoSugars() {
+        Order order = new Order("coffee", 2);
+        Assert.assertTrue(Logic.translate(order).equals("C:2:0"));
     }
 
 }
