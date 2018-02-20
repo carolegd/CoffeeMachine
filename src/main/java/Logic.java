@@ -1,10 +1,13 @@
 public class Logic {
 
-    public static String orderTranslation(Order order) {
-        if (order.getNumberOfSugars()==2)
-            return "H:2:0";
+    public static String translate(Order order) {
+        String command = "H:";
+        if (order.getDrink().equals("tea"))
+            command = "T:";
         if (order.getNumberOfSugars()>0)
-            return "H:1:0";
-        return "H::";
+            command = command + String.valueOf(order.getNumberOfSugars())+ ":" + 0;
+        else
+            command = command + ":";
+        return command;
     }
 }

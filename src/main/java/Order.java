@@ -10,4 +10,8 @@ public class Order {
     public int getNumberOfSugars() {
         return numberOfSugars;
     }
+
+    public String getDrink() {
+        return drink;
+    }
 }
