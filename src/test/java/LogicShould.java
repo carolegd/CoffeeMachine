@@ -32,6 +32,11 @@ public class LogicShould {
         Assert.assertTrue(Logic.translate(order).equals("C:2:0"));
     }
 
+    @Test
+    public void translateForwardsMessageContent(){
+        Assert.assertTrue(Logic.translate("message-content").equals("M:message-content"));
+    }
+
 }
 
 

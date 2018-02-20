@@ -15,4 +15,8 @@ public class Logic {
             command = command + SEPARATION;
         return command;
     }
+
+    public static String translate(String message) {
+        return "M"+SEPARATION+message;
+    }
 }
